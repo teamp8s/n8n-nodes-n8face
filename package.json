@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/plus8soft/n8n-nodes-n8face.git"
+    "url": "https://github.com/teamp8s/n8n-nodes-n8face.git"
   },
   "engines": {
     "node": ">=20.15"
