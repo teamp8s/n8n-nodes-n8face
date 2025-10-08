@@ -1,0 +1,24 @@
+{
+	"name": "n8face",
+	"displayName": "N8face",
+	"description": "N8face API integration",
+	"defaults": {
+		"name": "N8face"
+	},
+	"properties": [
+		{
+			"displayName": "Text",
+			"name": "text",
+			"type": "string",
+			"default": "",
+			"placeholder": "Enter text to process",
+			"description": "The text to send to N8face API"
+		}
+	],
+	"credentials": [
+		{
+			"name": "n8faceApi",
+			"required": true
+		}
+	]
+}
