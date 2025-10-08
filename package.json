@@ -18,6 +18,12 @@
     "type": "git",
     "url": "https://github.com/teamp8s/n8n-nodes-n8face.git"
   },
+  "bugs": {
+    "url": "https://github.com/teamp8s/n8n-nodes-n8face/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=20.15"
   },
