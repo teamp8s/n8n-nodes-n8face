@@ -4,20 +4,21 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
 
 export class N8face implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'N8face',
 		name: 'n8face',
-		group: ['transform'],
+		icon: { light: 'file:n8face.svg', dark: 'file:n8face.dark.svg' },
+		group: ['input'],
 		version: 1,
 		description: 'N8face API integration',
 		defaults: {
 			name: 'N8face',
 		},
-		inputs: ['main'],
-		outputs: ['main'],
+		inputs: [NodeConnectionTypes.Main],
+		outputs: [NodeConnectionTypes.Main],
 		credentials: [
 			{
 				name: 'n8faceApi',
@@ -45,7 +46,7 @@ export class N8face implements INodeType {
 			try {
 				const text = this.getNodeParameter('text', itemIndex, '') as string;
 				const credentials = await this.getCredentials('n8faceApi');
-				
+
 				if (!credentials?.apiKey) {
 					throw new NodeOperationError(this.getNode(), 'API Key is required');
 				}
@@ -67,7 +68,6 @@ export class N8face implements INodeType {
 					json: response,
 					pairedItem: itemIndex,
 				});
-
 			} catch (error) {
 				if (this.continueOnFail()) {
 					returnData.push({

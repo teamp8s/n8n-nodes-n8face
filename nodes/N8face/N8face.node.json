@@ -1,24 +1,23 @@
 {
-	"name": "n8face",
-	"displayName": "N8face",
-	"description": "N8face API integration",
-	"defaults": {
-		"name": "N8face"
-	},
-	"properties": [
-		{
-			"displayName": "Text",
-			"name": "text",
-			"type": "string",
-			"default": "",
-			"placeholder": "Enter text to process",
-			"description": "The text to send to N8face API"
-		}
+	"node": "n8n-nodes-base.n8face",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"AI",
+		"Miscellaneous",
+		"Communication",
+		"Utility"
 	],
-	"credentials": [
-		{
-			"name": "n8faceApi",
-			"required": true
-		}
-	]
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/teamp8s/n8n-nodes-n8face/tree/main?tab=readme-ov-file#1-configure-credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/teamp8s/n8n-nodes-n8face/tree/main?tab=readme-ov-file#n8face-node-for-n8n"
+			}
+		]
+	}
 }

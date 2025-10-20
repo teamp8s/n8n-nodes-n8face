@@ -1,12 +1,12 @@
-import {
-	ICredentialType,
-	INodeProperties,
-} from 'n8n-workflow';
+import { Icon, ICredentialType, INodeProperties } from 'n8n-workflow';
 
 export class N8faceApi implements ICredentialType {
 	name = 'n8faceApi';
 	displayName = 'N8face API';
-	documentationUrl = 'https://plus8soft.app.n8n.cloud';
+	documentationUrl =
+		'https://github.com/teamp8s/n8n-nodes-n8face/tree/main?tab=readme-ov-file#1-configure-credentials';
+
+	icon: Icon = { light: 'file:../icons/n8face.svg', dark: 'file:../icons/n8face.dark.svg' };
 
 	properties: INodeProperties[] = [
 		{
