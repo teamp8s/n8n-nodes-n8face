@@ -11,7 +11,7 @@ export class N8face implements INodeType {
 		displayName: 'N8face',
 		name: 'n8face',
 		icon: { light: 'file:n8face.svg', dark: 'file:n8face.dark.svg' },
-		group: ['input'],
+		group: ['transform'],
 		version: 1,
 		description: 'N8face API integration',
 		defaults: {

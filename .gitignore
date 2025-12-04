@@ -95,3 +95,6 @@ public
 # Temporary folders
 tmp/
 temp/
+
+# n8n local data
+n8n_data/
