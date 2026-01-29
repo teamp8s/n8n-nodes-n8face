@@ -78,6 +78,7 @@ To obtain an API key:
 
 - **Issues**: https://github.com/teamp8s/n8n-nodes-n8face/issues
 - **Documentation**: https://github.com/teamp8s/n8n-nodes-n8face#readme
+- **Email**: support@plus8soft.app
 
 ---
 
